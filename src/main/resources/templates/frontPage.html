@@ -14,57 +14,89 @@
         border-style: solid;
         width: 25%;
         box-sizing: border-box;
+        text-align: center;
     }
 
-    h1{
-position: absolute;
-        top: 100px;
-    }
 
   img{
-      position: absolute;
+      position: static;
       width: 20%;
 
+  }
+
+  .column{
+      float: left;
+      width: 50%;
+      height: 200px;
+      box-sizing: border-box;
+      border-style: solid;
+      padding: 5px 5px;
+  }
+  .row{
+      float: left;
+      width: 25%;
+      height: 200px;
+      box-sizing: border-box;
+      border-style: solid;
+      padding: 5px 5px;
+  }
+  .storRow{
+      float: left;
+      width: 75%;
+      height: 200px;
+      box-sizing: border-box;
+      border-style: solid;
+  }
+  .miniRow{
+      float: left;
+      width: 100%;
+      height: 100px;
+      box-sizing: border-box;
+      text-align: center;
   }
 
 </style>
 
 <body>
 
-<nav>
     <div class="menu">
 <ul>
-    <li> knap1</li>
+    <li> Stats</li>
 </ul>
     </div>
-
     <div class="menu">
         <ul>
-            <li> knap1</li>
+            <li> <a href="hej">Links til gode ting</a></li>
         </ul>
     </div>
     <div class="menu">
         <ul>
-            <li> knap1</li>
+            <li> Kontakt</li>
         </ul>
     </div>
     <div class="menu">
         <ul>
-            <li> knap1</li>
+            <li> Info om os, vi søde</li>
         </ul>
     </div>
 
-</nav>
+    <div class = "miniRow">
+        <h1>Danmark mod Madspild!</h1>
+    </div>
 
-<h1> Velkommen til vores side om madspild</h1>
+    <div class = "storRow">
+        <h1>Kæmpe test af Simon</h1>
+    </div>
+<div class = "row">
+    <h1> Velkommen til vores side om madspild</h1>
+</div>
 
-
-
-    <img src="https://cdn.pixabay.com/photo/2019/06/21/14/38/banana-4289613_1280.png">
-
-
-
-
+<div class = "column">
+    <h1>Bla bla bla</h1>
+</div>
+    <div class = "column">
+    <img src="https://cdn.pixabay.com/photo/2019/06/21/14/38/banana-4289613_1280.png" width="175" height="175" alt="banan">
+    </div>
 
 </body>
 </html>
