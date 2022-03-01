@@ -16,5 +16,11 @@ public class IndexController {
         return "about";
     }
 
+    @GetMapping("/links")
+    public String links(){return "links";}
+
+    @GetMapping("/stats")
+    public String stats(){return "stats";}
+
 
 }
