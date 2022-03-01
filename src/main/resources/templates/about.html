@@ -39,13 +39,13 @@
         <li><a href="links">Helpful links</a></li>
     </ul>
 </div>
-<div class="w3-content w3-display-container">
+<div class="image-display">
     <img class="ourSlides" src="https://play-lh.googleusercontent.com/3L94mFtBEqwIsL_A2fz1sGutA-jABWpCFaRPro30gEeeaFon-FGdkB3kuTsxPl-hCAar" style="width:auto">
     <img class="ourSlides" src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/v1397194392/5cd012fd4e1a5a555602a8032372291a.png" style="width:auto">
 
 </div>
 <script>
-    var slideIndex = 0;
+    var image = 0;
     carousel();
 
     function carousel() {
@@ -54,9 +54,9 @@
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
         }
-        slideIndex++;
-        if (slideIndex > x.length) {slideIndex = 1}
-        x[slideIndex-1].style.display = "block";
+        image++;
+        if (image > x.length) {image = 1}
+        x[image-1].style.display = "block";
         setTimeout(carousel, 2000); // Change image every 2 seconds
     }
 </script>
